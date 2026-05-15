@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import type { ReactNode } from "react";
 import "./globals.css";
 import { ThemeProvider } from "@/components/ui/ThemeProvider";
 import { LangProvider } from "@/hooks/useLang";
@@ -10,7 +11,7 @@ export const metadata: Metadata = {
   keywords: "clinic Rwanda, Nyabihu hospital, Bigogwe health center, medical clinic Rwanda",
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body suppressHydrationWarning>
